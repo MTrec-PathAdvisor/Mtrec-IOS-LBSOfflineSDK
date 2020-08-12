@@ -117,7 +117,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = "CoreLocation","CoreBluetooth","CoreMotion"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
