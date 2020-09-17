@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Mtrec-IOS-LBSOfflineSDK"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "IOS BLE indoor localization for HKUST campus, covered AC2-7"
 
   
