@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Mtrec-IOS-LBSOfflineSDK"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.11"
   spec.summary      = "IOS BLE indoor localization for HKUST campus, covered: academic builing, CYT"
 
   
@@ -27,6 +27,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/wltsuiac/Mtrec-IOS-LBSOfflineSDK.git", :tag => "#{spec.version}" }
 
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   spec.exclude_files = "Classes/Exclude"
   
